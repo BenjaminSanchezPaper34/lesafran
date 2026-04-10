@@ -15,13 +15,14 @@
   <meta name="keywords" content="restaurant Vias Plage, pizza Vias, kebab Vias, burger Vias, rôtisserie Vias plage, tacos Vias, crêpes Vias, glacier Vias, restaurant vacances Vias, manger Vias Plage, Le Safran 34450, restaurant ouvert 7j/7 Vias">
   <meta name="author" content="Paper34">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://safran-vias.fr/">
+  <link rel="canonical" href="https://www.safran-vias.fr/">
+  <link rel="alternate" hreflang="fr" href="https://www.safran-vias.fr/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="Le Safran Vias Plage | Pizza, Burger, Kebab, Rôtisserie">
   <meta property="og:description" content="Pizzas, burgers, kebabs, tacos, rôtisserie, crêpes et glaces. Ouvert 7j/7 de 11h à 23h. L'adresse incontournable de vos vacances à Vias Plage.">
-  <meta property="og:url" content="https://safran-vias.fr/">
+  <meta property="og:url" content="https://www.safran-vias.fr/">
   <meta property="og:image" content="https://safran-vias.fr/images/og-image.jpg">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Le Safran - Vias Plage">
@@ -48,14 +49,16 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Schema.org JSON-LD Restaurant -->
+  <!-- Schema.org JSON-LD Restaurant (unique, complet) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Le Safran",
-    "image": "https://safran-vias.fr/images/logo-lesafran.png",
-    "url": "https://safran-vias.fr",
+    "alternateName": "Le Safran Vias Plage",
+    "description": "Restaurant à Vias Plage : pizzas, burgers, kebabs, tacos, rôtisserie, crêpes, glaces et churros. Ouvert 7j/7 de 11h à 23h, service continu sans réservation. L'adresse incontournable de vos vacances à Vias Plage.",
+    "image": "https://www.safran-vias.fr/images/logo-lesafran.png",
+    "url": "https://www.safran-vias.fr",
     "telephone": "+33467217600",
     "address": {
       "@type": "PostalAddress",
@@ -70,16 +73,42 @@
       "latitude": 43.2957,
       "longitude": 3.4156
     },
-    "openingHoursSpecification": {
+    "hasMap": "https://www.google.com/maps/place/Le+Safran/@43.2957,3.4156",
+    "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "11:00",
       "closes": "23:00"
-    },
-    "servesCuisine": ["Pizza", "Burger", "Kebab", "Tacos", "Rôtisserie", "Crêpes", "Glaces"],
+    }],
+    "servesCuisine": ["Pizza", "Burger", "Kebab", "Tacos", "Rôtisserie", "Crêpes", "Glaces", "Churros"],
     "priceRange": "€",
-    "acceptsReservations": "false",
-    "hasMenu": "https://safran-vias.fr/#carte",
+    "acceptsReservations": false,
+    "paymentAccepted": "Cash, Credit Card, Visa, Mastercard",
+    "currenciesAccepted": "EUR",
+    "hasMenu": "https://www.safran-vias.fr/#carte",
+    "additionalType": "http://www.productontology.org/id/Pizzeria",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Terrasse", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Vente à emporter", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Sur place", "value": true}
+    ],
+    "areaServed": [
+      {"@type": "City", "name": "Vias"},
+      {"@type": "City", "name": "Agde"},
+      {"@type": "City", "name": "Cap d'Agde"},
+      {"@type": "City", "name": "Portiragnes"},
+      {"@type": "City", "name": "Sérignan"},
+      {"@type": "City", "name": "Valras-Plage"}
+    ],
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.safran-vias.fr/#carte",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"]
+      },
+      "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+    },
     "sameAs": [
       "https://www.instagram.com/le_safran_vias/",
       "https://www.facebook.com/profile.php?id=100057538415623",
@@ -94,22 +123,75 @@
   }
   </script>
 
-  <!-- Schema.org LocalBusiness (SEO local renforcé) -->
+  <!-- Schema.org FAQPage (SEO local position zéro) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Le Safran - Vias Plage",
-    "description": "Restaurant à Vias Plage proposant pizzas, burgers, kebabs, tacos, rôtisserie, crêpes, glaces et churros. Ouvert 7j/7 de 11h à 23h, service continu sans réservation.",
-    "telephone": "+33467217600",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Avenue de la Méditerranée",
-      "addressLocality": "Vias",
-      "postalCode": "34450",
-      "addressCountry": "FR"
-    },
-    "areaServed": ["Vias", "Vias Plage", "Agde", "Cap d'Agde", "Portiragnes", "Sérignan"]
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Où manger à Vias Plage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Safran est l'adresse incontournable de Vias Plage pour manger. Situé au 996 Avenue de la Méditerranée, il propose pizzas, burgers, kebabs, tacos, rôtisserie, crêpes, glaces et churros. Ouvert 7j/7 de 11h à 23h sans réservation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le Safran est-il ouvert tous les jours ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, Le Safran est ouvert 7 jours sur 7, de 11h à 23h en service continu. Pas besoin de réserver, venez quand vous voulez. Saison 2026 ouverte depuis le 10 avril."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Peut-on commander à emporter au Safran ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, Le Safran propose la vente à emporter sur toute sa carte : pizzas, burgers, kebabs, tacos, paninis, crêpes, churros et glaces. Vous pouvez aussi manger en terrasse sur place."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quels types de pizzas propose Le Safran à Vias Plage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Safran propose plus de 20 pizzas en 26cm et 33cm : Margherita, Reine, Calzone, 4 Fromages, Orientale, Safran (signature), Nordique au saumon, Raclette, et bien d'autres. Offre spéciale : 3 pizzas achetées = la 4ème offerte !"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Y a-t-il un glacier à Vias Plage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Safran à Vias Plage fait aussi glacier et confiserie. Vous y trouverez des glaces, crêpes, gaufres, churros, beignets et milk-shakes. Ouvert tous les jours de 11h à 23h."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Où se trouve le restaurant Le Safran ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Safran se trouve au 996 Avenue de la Méditerranée, 34450 Vias Plage, dans le sud de la France en Occitanie. Téléphone : 04 67 21 76 00."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.safran-vias.fr/"},
+      {"@type": "ListItem", "position": 2, "name": "La Carte", "item": "https://www.safran-vias.fr/#carte"},
+      {"@type": "ListItem", "position": 3, "name": "Avis", "item": "https://www.safran-vias.fr/#avis"},
+      {"@type": "ListItem", "position": 4, "name": "Contact", "item": "https://www.safran-vias.fr/#contact"}
+    ]
   }
   </script>
 </head>
@@ -161,11 +243,11 @@
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content" id="heroContent">
       <img src="images/logo-lesafran.svg" alt="Le Safran - Vias Plage" class="hero-logo mx-auto" width="200" height="190">
-      <h1 class="hero-subtitle">Pizza &bull; Burger &bull; Kebab &bull; Rôtisserie &bull; Glacier</h1>
+      <h1 class="hero-subtitle">Pizza &bull; Burger &bull; Kebab &bull; Rôtisserie &bull; Glacier — Vias Plage</h1>
       <p class="hero-tagline">L'adresse incontournable de vos vacances à Vias Plage</p>
       <div class="hero-hours">
         <span class="dot"></span>
-        <span>Ouvert 7j/7 de 11h à 23h — Service continu</span>
+        <span>Saison 2026 ouverte ! — 7j/7 de 11h à 23h</span>
       </div>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="#carte" class="btn-primary">Voir la carte</a>
@@ -187,8 +269,8 @@
     <div class="max-w-7xl mx-auto">
       <div class="about-grid">
         <div class="about-text reveal-left">
-          <span class="section-label">Bienvenue</span>
-          <h2 class="text-white mb-6">Votre pause gourmande<br>à Vias Plage</h2>
+          <span class="section-label">Saison 2026 ouverte depuis le 10 avril</span>
+          <h2 class="text-white mb-6">Votre restaurant ouvert 7j/7<br>à Vias Plage</h2>
           <p>Chaque été, Le Safran est le rendez-vous des vacanciers et des habitués. Pizzas généreuses, burgers bien garnis, kebabs, tacos, poulet rôti, crêpes, churros et glaces — on a de quoi régaler toute la famille, du matin au soir.</p>
           <p>Pas besoin de réserver : passez quand vous voulez, on est ouvert non-stop de 11h à 23h. À emporter ou en terrasse, c'est vous qui choisissez.</p>
           <div class="mt-8">
