@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Configuration Mail — Le Safran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0A0A0A;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      background: #1A1A1A;
+      border: 1px solid #222;
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo { width: 80px; height: auto; margin-bottom: 24px; }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+    .email {
+      display: inline-block;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #C9A84C;
+      margin-bottom: 32px;
+      letter-spacing: 0.01em;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      background: #D62725;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+    .btn:hover {
+      background: #E84240;
+      transform: scale(1.02);
+      box-shadow: 0 8px 32px rgba(214, 39, 37, 0.3);
+    }
+    .steps {
+      margin-top: 32px;
+      text-align: left;
+    }
+    .steps h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #C9A84C;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .step {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.5;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: #222;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .footer-text {
+      margin-top: 32px;
+      font-size: 12px;
+      color: #555;
+    }
+    .footer-text a { color: #888; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="images/logo-lesafran.svg" alt="Le Safran" class="logo">
+    <h1>Configuration Mail</h1>
+    <p class="subtitle">Installez le profil de messagerie pour configurer automatiquement votre boîte mail sur iPhone, iPad ou Mac.</p>
+    <div class="email">contact@safran-vias.fr</div>
+    <br>
+    <a href="mobileconfig.mobileconfig" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Installer le profil
+    </a>
+    <div class="steps">
+      <h3>Comment faire</h3>
+      <div class="step"><span class="step-num">1</span><span>Ouvrez cette page depuis votre iPhone ou Mac</span></div>
+      <div class="step"><span class="step-num">2</span><span>Cliquez sur "Installer le profil"</span></div>
+      <div class="step"><span class="step-num">3</span><span>Allez dans Réglages > Profil téléchargé</span></div>
+      <div class="step"><span class="step-num">4</span><span>Installez le profil et entrez votre mot de passe mail</span></div>
+    </div>
+    <p class="footer-text"><a href="/">Le Safran — Vias Plage</a></p>
+  </div>
+</body>
+</html>
