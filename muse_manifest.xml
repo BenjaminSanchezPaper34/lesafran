@@ -1,0 +1,77 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://safran-vias.fr" resolutions="1x" timestamp="1751269291371">
+  <folder name="css">
+    <file name="site_global.css" crc="132734316"/>
+    <file name="index.css" crc="3964603940" ref="index"/>
+    <file name="la-carte.css" crc="3861292664" ref="la-carte"/>
+  </folder>
+  <folder name="fonts">
+    <file name="outfit-regular-webfont.woff" crc="3944101014"/>
+    <file name="outfit-regular-webfont.eot" crc="175980864"/>
+    <file name="outfit-regular-webfont.svg" crc="4278112825"/>
+    <file name="foco-webfont.woff" crc="431871424"/>
+    <file name="foco-webfont.eot" crc="33991408"/>
+    <file name="foco-webfont.svg" crc="520063322"/>
+    <file name="rift_soft_bold-webfont.woff" crc="4294686594"/>
+    <file name="rift_soft_bold-webfont.eot" crc="150485236"/>
+    <file name="rift_soft_bold-webfont.svg" crc="4293163659"/>
+    <file name="opensans-bold-webfont.woff" crc="2330949"/>
+    <file name="opensans-bold-webfont.eot" crc="388375583"/>
+    <file name="opensans-bold-webfont.svg" crc="425446851"/>
+    <file name="rift_soft_bold-webfont.woff" crc="4294686594"/>
+    <file name="rift_soft_bold-webfont.eot" crc="150485236"/>
+    <file name="rift_soft_bold-webfont.svg" crc="4293163659"/>
+    <file name="foco-webfont.woff" crc="431871424"/>
+    <file name="foco-webfont.eot" crc="33991408"/>
+    <file name="foco-webfont.svg" crc="520063322"/>
+  </folder>
+  <folder name="assets">
+    <file name="video.webm" crc="183254735" seo="true" mt="1750789073000"/>
+    <file name="video.mp4" crc="223761976" seo="true" mt="1750788885000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:la-carte"/>
+    <file name="museutils.js" crc="3939489907" ref="index:la-carte"/>
+    <file name="whatinput.js" crc="86476730" ref="index:la-carte"/>
+    <file name="museconfig.js" crc="128606099" ref="index:la-carte"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index:la-carte"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index:la-carte"/>
+    <file name="require.js" crc="4177726516" ref="index:la-carte"/>
+  </folder>
+  <folder name="images">
+    <file name="adobestock_47714212.jpg" crc="398599004" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="instagram-lesafran.svg" crc="3980301844" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="instagram-lesafran_poster_.png" crc="3955388507" ref="index"/>
+    <file name="facebook-lesafran.svg" crc="188352197" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook-lesafran_poster_.png" crc="366445534" ref="index"/>
+    <file name="tripadvisor-lesafran.svg" crc="3969328729" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tripadvisor-lesafran_poster_.png" crc="145492592" ref="index"/>
+    <file name="logo-lesafran.png" crc="4285114852" seo="true" ref="la-carte">
+      <caption webpage="index" alt=""/>
+      <caption webpage="la-carte" alt=""/>
+    </file>
+    <file name="logoblanc-paper34.svg" crc="3970129298" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logoblanc-paper34_poster_.png" crc="50960925" ref="index"/>
+    <file name="adobestock_211121777.jpg" crc="4263816072" ref="la-carte">
+      <caption webpage="la-carte" alt=""/>
+    </file>
+    <file name="adobestock_217343279.jpg" crc="3784971754" ref="la-carte">
+      <caption webpage="la-carte" alt=""/>
+    </file>
+    <file name="logo-lesafran.svg" crc="3930311459" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo-lesafran_poster_.png" crc="3930401105" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4038114512" seo="true" mt="1751269280112" redirect="true"/>
+  <file name="la-carte.html" crc="397598287" seo="true" mt="1750790196189" redirect="true"/>
+</manifest>

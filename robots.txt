@@ -1,3 +1,32 @@
+# Le Safran — Vias Plage
+# https://www.safran-vias.fr
+
 User-agent: *
 Allow: /
-Sitemap: https://safran-vias.fr/sitemap.xml
+
+# Moteurs de recherche IA — autorisation explicite
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.safran-vias.fr/sitemap.xml

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="robots" content="noindex, follow">
+  <title>Page introuvable — Le Safran Vias Plage</title>
+  <link rel="icon" type="image/png" href="/images/logo-lesafran.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0A0A0A;
+      --white: #FFFFFF;
+      --cream: #F5F0EB;
+      --red: #D62725;
+      --red-light: #E84240;
+      --gold: #C9A84C;
+      --gray: #888888;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      /* halo chaud derrière le contenu, cohérent avec le hero du site */
+      background-image: radial-gradient(circle at 50% 40%, rgba(214, 39, 37, 0.16), transparent 60%);
+    }
+    .wrap { max-width: 560px; }
+    .logo { width: 108px; height: auto; margin: 0 auto 40px; display: block; }
+    .code {
+      font-size: clamp(64px, 16vw, 112px);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--gold);
+      letter-spacing: -0.03em;
+    }
+    h1 {
+      font-size: clamp(24px, 5vw, 32px);
+      font-weight: 600;
+      margin: 20px 0 16px;
+      color: var(--cream);
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--gray);
+      margin-bottom: 36px;
+    }
+    .actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 15px 32px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn-primary { background: var(--red); color: var(--white); }
+    .btn-primary:hover { background: var(--red-light); transform: scale(1.02); box-shadow: 0 8px 24px rgba(214, 39, 37, 0.35); }
+    .btn-ghost { border: 1px solid #333; color: var(--cream); }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: scale(1.02); }
+    .infos { margin-top: 44px; font-size: 14px; color: #666; line-height: 1.8; }
+    .infos a { color: var(--gray); text-decoration: none; }
+    .infos a:hover { color: var(--gold); }
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+      .btn:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img src="/images/logo-lesafran.svg" alt="Le Safran, restaurant à Vias Plage" class="logo">
+    <div class="code">404</div>
+    <h1>Cette page a filé à la plage</h1>
+    <p>La page que vous cherchez n'existe pas ou a été déplacée.<br>Retrouvez notre carte et nos horaires sur la page d'accueil.</p>
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+      <a href="/#carte" class="btn btn-ghost">Voir la carte</a>
+    </div>
+    <div class="infos">
+      996 Avenue de la Méditerranée, 34450 Vias Plage<br>
+      <a href="tel:0467217600">04 67 21 76 00</a> — ouvert 7j/7 de 11h à 23h
+    </div>
+  </main>
+</body>
+</html>
