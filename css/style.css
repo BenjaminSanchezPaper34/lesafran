@@ -788,3 +788,56 @@ p {
     animation: none;
   }
 }
+
+/* ---- Fermeture saisonnière ----
+   Bandeau de fin de saison. Volontairement SANS classe .reveal :
+   l'information doit être lisible même si GSAP ne tourne pas. */
+.closing-band {
+  background: linear-gradient(180deg, rgba(201, 168, 76, 0.10), rgba(201, 168, 76, 0.03));
+  border-top: 1px solid rgba(201, 168, 76, 0.22);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.22);
+  padding: clamp(56px, 9vw, 96px) 24px;
+  text-align: center;
+}
+
+.closing-band .section-label {
+  color: var(--gold-light);
+}
+
+.closing-band h2 {
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.2;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+
+.closing-band p {
+  max-width: 620px;
+  margin: 0 auto 18px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.closing-band .closing-rdv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 34px;
+  border: 1px solid rgba(201, 168, 76, 0.45);
+  border-radius: 999px;
+  color: var(--gold-light);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Le point du hero ne doit plus pulser quand le restaurant est fermé :
+   le pouls signifie « on est ouvert maintenant ». */
+.hero-hours.is-closed {
+  color: var(--gold-light);
+}
+
+.hero-hours.is-closed .dot {
+  background: var(--gold);
+  animation: none;
+}
