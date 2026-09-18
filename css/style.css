@@ -61,7 +61,12 @@ h1, h2, h3, h4 {
 }
 
 h1 { font-size: clamp(40px, 8vw, 96px); }
-h2 { font-size: clamp(32px, 5vw, 64px); }
+/* Tailwind est chargé par CDN : son preflight injecte au runtime
+   « h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit } » APRÈS
+   cette feuille. À spécificité égale (sélecteur d'élément), c'est lui qui
+   gagnait et tous les titres de section retombaient à 16px / graisse 400.
+   Le préfixe « body » suffit à repasser devant. */
+body h2 { font-size: clamp(32px, 5vw, 64px); font-weight: 700; line-height: 1.15; }
 h3 { font-size: clamp(20px, 3vw, 32px); }
 
 p {
